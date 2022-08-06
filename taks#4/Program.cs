@@ -9,15 +9,11 @@ int numberTwo = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число ");
 int numberThree = Convert.ToInt32(Console.ReadLine());
 
-int max = numberFirst;
+int max = numberTwo;
 
 if (numberFirst > numberTwo)
 {
     max = numberFirst;
-}
-else
-{
-    max = numberTwo;
 }
 if (numberThree > max)
 {
