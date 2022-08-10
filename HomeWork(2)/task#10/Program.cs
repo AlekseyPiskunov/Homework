@@ -1,19 +1,23 @@
 ﻿// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
 
+Console.Clear();
+
 Console.WriteLine("Введите трёхзначное число ");
 int number = Convert.ToInt32(Console.ReadLine());
-
 string stringNumber = Convert.ToString(number);
-
-void Find(string number)
+char Find(string number)
 {
-    if (number.Length > 2)
+    var isNumber = int.TryParse(number, out int result);
+    if (isNumber == false)
     {
-        Console.WriteLine(number[1]);
+        throw new Exception("Ввод недействителен.");
     }
-    else
+
+    if ((number.Length < 3) || (number.Length > 3))
     {
-        Console.WriteLine("Введено не трёхзначное число!");
+        throw new Exception("Введено не трёхзначное число!");
     }
+    return number[1];
 }
-Find(stringNumber);
+char result = Find(stringNumber);
+Console.WriteLine(result);
