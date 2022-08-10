@@ -5,4 +5,15 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 string stringNumber = Convert.ToString(number);
 
-Console.WriteLine($"Вторая цифра числа - {stringNumber[1]}");
+void Find(string number)
+{
+    if (number.Length > 2)
+    {
+        Console.WriteLine(number[1]);
+    }
+    else
+    {
+        Console.WriteLine("Введено не трёхзначное число!");
+    }
+}
+Find(stringNumber);
