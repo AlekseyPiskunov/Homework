@@ -1,7 +1,43 @@
-﻿/*
-   Задача 19 Напишите программу, которая принимает на вход пятизначное число
-   и проверяет, является ли оно палиндромом.
+﻿//______________________________________________________________
+// Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+/* Вариант 1 */
+// try
+// {
+//     Console.WriteLine("Введите пятизначное число: ");
+//     int number = int.Parse(Console.ReadLine());
+//     string numberStr = Convert.ToString(number);
+
+//     if (numberStr.Length == 5)
+//     {
+//         Checking(numberStr);
+//     }
+//     else
+//     {
+//         Console.WriteLine("Я не знаю что с этим делать...");
+//     }
+// }
+// catch (Exception)
+// {
+//     Console.WriteLine("Ошибка ввода!");
+// }
+
+// void Checking(string num)
+// {
+//     if (num[0] == num[4] & num[1] == num[3])
+//     {
+//         Console.WriteLine("Это число палиндром.");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Это число не палиндром.");
+//     }
+// }
+
+/* 
+    Вариант 2 
 */
+
 try
 {
     Console.WriteLine("Введите пятизначное число: ");
@@ -10,26 +46,27 @@ try
 
     if (numberStr.Length == 5)
     {
-        Checking(numberStr);
+        if (Checking(numberStr))
+        {
+            Console.WriteLine("Палиндром!");
+        }
+        else
+        {
+            Console.WriteLine("Не палиндром!");
+        }
     }
     else
     {
-        Console.WriteLine("Я не знаю что с этим делать... Введено не пятизначное число!");
+        System.Console.WriteLine("Error.");
     }
 }
-catch (Exception)
+catch
 {
-    Console.WriteLine("Ошибка ввода!");
+    throw new Exception("Error.");
 }
 
-void Checking(string num)
+bool Checking(string num)
 {
-    if (num[0] == num[4] & num[1] == num[3])
-    {
-        Console.WriteLine("Это число палиндром.");
-    }
-    else
-    {
-        Console.WriteLine("Это число не палиндром.");
-    }
+    bool result = num[0] == num[4] || num[1] == num[3];
+    return result;
 }
