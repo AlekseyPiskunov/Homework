@@ -38,35 +38,60 @@
     Вариант 2 
 */
 
-try
+// try
+// {
+//     Console.WriteLine("Введите пятизначное число: ");
+//     int number = int.Parse(Console.ReadLine());
+//     string numberStr = Convert.ToString(number);
+
+//     if (numberStr.Length == 5)
+//     {
+//         if (Checking(numberStr))
+//         {
+//             Console.WriteLine("Палиндром!");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Не палиндром!");
+//         }
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("Error.");
+//     }
+// }
+// catch
+// {
+//     throw new Exception("Error.");
+// }
+
+// bool Checking(string num)
+// {
+//     bool result = num[0] == num[4] || num[1] == num[3];
+//     return result;
+// }
+
+/*
+    Вариант 3
+*/
+Console.WriteLine("Введите пятизначное число: ");
+
+int Reverse(int number)
 {
-    Console.WriteLine("Введите пятизначное число: ");
-    int number = int.Parse(Console.ReadLine());
     string numberStr = Convert.ToString(number);
-
-    if (numberStr.Length == 5)
-    {
-        if (Checking(numberStr))
-        {
-            Console.WriteLine("Палиндром!");
-        }
-        else
-        {
-            Console.WriteLine("Не палиндром!");
-        }
-    }
-    else
-    {
-        System.Console.WriteLine("Error.");
-    }
-}
-catch
-{
-    throw new Exception("Error.");
+    char[] c = numberStr.ToCharArray();
+    Array.Reverse(c);
+    string n = new string(c);
+    return Convert.ToInt32(n);
 }
 
-bool Checking(string num)
+int number = Convert.ToInt32(Console.ReadLine());
+int Rev = Reverse(number);
+if (Rev == number)
 {
-    bool result = num[0] == num[4] || num[1] == num[3];
-    return result;
+    Console.WriteLine("Палиндром ");
+}
+else
+{
+    Console.WriteLine("Не палиндром ");
 }
