@@ -5,7 +5,7 @@
 
 int[] array = new int[5];
 
-int[] FillArray(int[] arr)
+int[] FillArray(int[] arr) // Заполняет массив.
 {
     Random random = new Random();
     for (int i = 0; i < arr.Length; i++)
@@ -15,7 +15,7 @@ int[] FillArray(int[] arr)
     return arr;
 }
 
-void PrintArray(int[] arr)
+void PrintArray(int[] arr) // Печатает массив.
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -27,7 +27,7 @@ void PrintArray(int[] arr)
 int[] fillArray = FillArray(array);
 PrintArray(fillArray);
 
-int FindMaxElement(int[] arr)
+int FindMaxElement(int[] arr) // Ищет максимальный елемент в массиве.
 {
     int max = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -42,7 +42,7 @@ int FindMaxElement(int[] arr)
 
 int maxElement = FindMaxElement(array);
 
-int FindMinElement(int[] arr, int max)
+int FindMinElement(int[] arr, int max) // Ищет минимальный елемент в массиве.
 {
     int min = max;
     for (int i = 0; i < arr.Length; i++)
