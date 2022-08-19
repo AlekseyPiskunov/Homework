@@ -3,9 +3,9 @@
 [3 7 22 2 78] -> 76
 */
 
-int[] array = new int[5];
+double[] array = new double[15];
 
-int[] FillArray(int[] arr) // Заполняет массив.
+double[] FillArray(double[] arr)
 {
     Random random = new Random();
     for (int i = 0; i < arr.Length; i++)
@@ -15,7 +15,7 @@ int[] FillArray(int[] arr) // Заполняет массив.
     return arr;
 }
 
-void PrintArray(int[] arr) // Печатает массив.
+void PrintArray(double[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -24,12 +24,12 @@ void PrintArray(int[] arr) // Печатает массив.
     System.Console.WriteLine();
 }
 
-int[] fillArray = FillArray(array);
+double[] fillArray = FillArray(array);
 PrintArray(fillArray);
 
-int FindMaxElement(int[] arr) // Ищет максимальный елемент в массиве.
+double FindMaxElement(double[] arr)
 {
-    int max = 0;
+    double max = 0;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > max)
@@ -40,11 +40,11 @@ int FindMaxElement(int[] arr) // Ищет максимальный елемен�
     return max;
 }
 
-int maxElement = FindMaxElement(array);
+double maxElement = FindMaxElement(array);
 
-int FindMinElement(int[] arr, int max) // Ищет минимальный елемент в массиве.
+double FindMinElement(double[] arr, double max)
 {
-    int min = max;
+    double min = max;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] < min)
@@ -55,5 +55,5 @@ int FindMinElement(int[] arr, int max) // Ищет минимальный еле
     return min;
 }
 
-int minElement = FindMinElement(array, maxElement);
+double minElement = FindMinElement(array, maxElement);
 System.Console.WriteLine($"Разница между максимальным и минимальным элементами = {maxElement - minElement}");
