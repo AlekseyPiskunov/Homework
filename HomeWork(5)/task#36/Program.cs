@@ -27,7 +27,7 @@ int FindSumElementsPositionNotEven(int[] arr) // Поиск суммы элем�
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i % 2 == 1)
+        if (i % 2 != 0)
         {
             sum += arr[i];
         }

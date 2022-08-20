@@ -1,0 +1,15 @@
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\bin\Debug\net6.0\task#34.exe
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\bin\Debug\net6.0\task#34.deps.json
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\bin\Debug\net6.0\task#34.runtimeconfig.json
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\bin\Debug\net6.0\task#34.dll
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\bin\Debug\net6.0\task#34.pdb
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.csproj.AssemblyReference.cache
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.GeneratedMSBuildEditorConfig.editorconfig
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.AssemblyInfoInputs.cache
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.AssemblyInfo.cs
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.csproj.CoreCompileInputs.cache
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.dll
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\refint\task#34.dll
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.pdb
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\task#34.genruntimeconfig.cache
+E:\GeekBrains\Домашняя работа\Знакомство с языками программирования\Домашняя работа(Семинары)\HomeWork\HomeWork(5)\task#34\obj\Debug\net6.0\ref\task#34.dll
