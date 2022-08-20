@@ -29,8 +29,8 @@ PrintArray(fillArray);
 
 double FindMaxElement(double[] arr)
 {
-    double max = 0;
-    for (int i = 0; i < arr.Length; i++)
+    double max = arr[0];
+    for (int i = 1; i < arr.Length; i++)
     {
         if (arr[i] > max)
         {
@@ -40,12 +40,10 @@ double FindMaxElement(double[] arr)
     return max;
 }
 
-double maxElement = FindMaxElement(array);
-
-double FindMinElement(double[] arr, double max)
+double FindMinElement(double[] arr)
 {
-    double min = max;
-    for (int i = 0; i < arr.Length; i++)
+    double min = arr[0];
+    for (int i = 1; i < arr.Length; i++)
     {
         if (arr[i] < min)
         {
@@ -54,6 +52,6 @@ double FindMinElement(double[] arr, double max)
     }
     return min;
 }
-
-double minElement = FindMinElement(array, maxElement);
+double maxElement = FindMaxElement(array);
+double minElement = FindMinElement(array);
 System.Console.WriteLine($"Разница между максимальным и минимальным элементами = {maxElement - minElement}");

@@ -2,9 +2,9 @@
 Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами.
 Напишите программу, которая покажет количество чётных чисел в массиве. 
 */
-System.Console.Write("Введите размер массива: ");
-int sizeArray = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[sizeArray];
+System.Console.Write("Введите кол-во элементов в массиве: ");
+int positionCount = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[positionCount];
 
 int[] FillArray(int[] arr) // Заполняет массив.
 {
