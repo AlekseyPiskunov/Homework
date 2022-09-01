@@ -13,11 +13,9 @@ int[,,] FillArray(int[,,] arr)
 {
     int[] temoraryArray = new int[arr.GetLength(0) * arr.GetLength(1) * arr.GetLength(2)];
     Random random = new Random();
-    int number;
     for (int i = 0; i < temoraryArray.GetLength(0); i++)
     {
         temoraryArray[i] = random.Next(10, 100);
-        number = temoraryArray[i];
         if (i >= 1)
         {
             for (int j = 0; j < i; j++)
@@ -26,9 +24,7 @@ int[,,] FillArray(int[,,] arr)
                 {
                     temoraryArray[i] = random.Next(10, 100);
                     j = 0;
-                    number = temoraryArray[i];
                 }
-                number = temoraryArray[i];
             }
         }
     }
