@@ -13,7 +13,7 @@ int[,,] FillArray(int[,,] arr)
 {
     int[] temoraryArray = new int[arr.GetLength(0) * arr.GetLength(1) * arr.GetLength(2)];
     Random random = new Random();
-    for (int i = 0; i < temoraryArray.GetLength(0); i++)
+    for (int i = 0; i < temoraryArray.Length; i++)
     {
         temoraryArray[i] = random.Next(10, 100);
         if (i >= 1)
@@ -28,15 +28,15 @@ int[,,] FillArray(int[,,] arr)
             }
         }
     }
-    int count = 0;
-    for (int x = 0; x < arr.GetLength(0); x++)
+    int index = 0;
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int y = 0; y < arr.GetLength(1); y++)
+        for (int j = 0; j < arr.GetLength(1); j++)
         {
-            for (int z = 0; z < arr.GetLength(2); z++)
+            for (int k = 0; k < arr.GetLength(2); k++)
             {
-                arr[x, y, z] = temoraryArray[count];
-                count++;
+                arr[i, j, k] = temoraryArray[index];
+                index++;
             }
         }
     }
