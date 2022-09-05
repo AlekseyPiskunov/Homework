@@ -11,18 +11,18 @@ int[,,] array = new int[2, 2, 2];
 
 int[,,] FillArray(int[,,] arr)
 {
-    int[] temoraryArray = new int[arr.GetLength(0) * arr.GetLength(1) * arr.GetLength(2)];
+    int[] temporaryArray = new int[arr.GetLength(0) * arr.GetLength(1) * arr.GetLength(2)];
     Random random = new Random();
-    for (int i = 0; i < temoraryArray.Length; i++)
+    for (int i = 0; i < temporaryArray.Length; i++)
     {
-        temoraryArray[i] = random.Next(10, 100);
+        temporaryArray[i] = random.Next(10, 100);
         if (i >= 1)
         {
             for (int j = 0; j < i; j++)
             {
-                while (temoraryArray[i] == temoraryArray[j])
+                while (temporaryArray[i] == temporaryArray[j])
                 {
-                    temoraryArray[i] = random.Next(10, 100);
+                    temporaryArray[i] = random.Next(10, 100);
                     j = 0;
                 }
             }
@@ -35,7 +35,7 @@ int[,,] FillArray(int[,,] arr)
         {
             for (int k = 0; k < arr.GetLength(2); k++)
             {
-                arr[i, j, k] = temoraryArray[index];
+                arr[i, j, k] = temporaryArray[index];
                 index++;
             }
         }
